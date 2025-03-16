@@ -1,0 +1,320 @@
+/* Estilos generales */
+/* Ocultar el contenido mientras el loader está activo */
+body.loading main, 
+body.loading header, 
+body.loading footer {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo claro */
+body.light-mode {
+    background-color: #a19e9e;
+    color: #222;
+}
+
+/* Loader */ 
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 2.5s ease-in-out;
+    padding: 20px;
+}
+
+.titulo {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.subtitulo {
+    max-width: 80%;
+    font-size: 1em;
+    opacity: 0.9;
+    margin-top: 7px;
+    font-style: italic;
+    color: aqua;
+}
+
+#loader.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #1c1c1c;
+    transition: background-color 0.3s;
+}
+
+body.light-mode nav {
+    /*background-color: #f0f0f0;*/
+    background-color: #f0eded; /* Navbar más claro */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    align-items: center; /* Asegura que cada `li` alinee su contenido verticalmente */
+}
+
+body.light-mode nav ul li a {
+    /*color: black;*/
+    color: #333; /* Color del texto en el navbar */
+}
+body.light-mode nav ul li a:hover {
+    color: #18ceaf; /* Efecto de hover en modo claro */
+}
+
+nav ul li a:hover {
+    color: #a7e1bf;
+}
+
+/* Secciones */
+section {
+    padding: 4em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Contenedor de tecnologías y logros */
+.tech-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tech-info {
+    max-width: 50%;
+}
+
+.tech-skills {
+    margin-top: 10%;
+}
+
+.tech-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+    .tech-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech-info {
+        max-width: 100%;
+        text-align: center;
+    }
+    .tech-image {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* Estilo de tarjetas de proyectos */
+.proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.proyecto {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    /*transition: background-color 0.3s;*/
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+body.light-mode .proyecto {
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto a {
+    display: block;
+    margin-top: 10px;
+    color: #4cb0e2;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proyecto a:hover {
+    text-decoration: underline;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(46, 45, 45, 0.2);
+}
+
+body.light-mode .proyecto a{
+    color: black;
+    font-weight: bold;
+}
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #00aaff;
+    color: white;
+    cursor: pointer;
+}
+
+body.light-mode button {
+    background-color: #0077cc;
+    color: white;
+}
+
+button:hover {
+    background-color: #0077cc;
+}
+
+/* Modal de confirmación */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-content button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #00aaff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-content button:hover {
+    background: #0077cc;
+}
+
+
+/* Footer 
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #1c1c1c;
+    transition: background-color 0.3s;
+}*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 1em;
+    background-color: #b0a9a9;
+}
+
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+body.light-mode footer {
+    background-color: #f0f0f0;
+}
+
+/* 🔝 Estilos para el botón "Volver arriba" */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Oculto por defecto */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+    background-color: #0077cc;
+    transform: scale(1.1);
+}
+
+/* Mostrar el botón cuando se hace scroll */
+.back-to-top.visible {
+    display: block;
+    opacity: 1;
+}

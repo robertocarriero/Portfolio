@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Roberto Carriero</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="loader">
+        <div class="titulo">
+            <h2>Bienvenidos a mi Portfolio</h2>
+        </div>
+        <div class="subtitulo">        
+            <h4>"Este portfolio no es solo código, es el testimonio de mi reinvención. Cada línea representa un desafío superado, un nuevo aprendizaje y la pasión inquebrantable por la tecnología. No importa cuántos años tengas ni de dónde vengas, lo importante es la determinación de seguir adelante y nunca dejar de aprender. Porque el futuro no es de los que esperan… es de los que crean"</h4>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <button id="toggleMode">🔳</button>
+                </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <div class="intro">
+                <div class="info">
+                    <h2>¡Hola! Soy Roberto Carriero.</h2>
+                    <p>De la industria tradicional a la vanguardia tecnológica. Después de 40 años como socio fundador de una pequeña industria, donde aprendí la importancia de la resiliencia, la adaptabilidad y el trabajo en equipo. Decidí en el 2023 reinventarme completamente y dedicarme al apasionante mundo del desarrollo de software.</p>
+                    <p>Desde entonces, he dedicado mi tiempo a capacitarme intensamente en tecnologías en las áreas de Frontend, Backend y Blockchain .</p>
+                    <p>Mi formación incluye estudios en lenguajes como JavaScript, Java, Python y Solidity. Además, he completado programas especializados como el Ethereum Developer Pack en ETH Kipu y el programa de Oracle Next Education como programador Junior en Backend,</p>
+                    <p>Además, participé en el Hackatón Académica de Ethereum en equipo, donde desarrollamos un proyecto innovador en el ecosistema blockchain. Esta experiencia me permitió fortalecer mis habilidades en Solidity, Web3 y trabajo en equipo bajo presión</p>
+                </div>
+                <div class="tech-container">
+                    <div class="tech-info">
+                        <div class="tech-skills">
+                            <h3>Mis Habilidades</h3>
+                            <ul>
+                                <li><strong>Frontend:</strong> JavaScript, React, React Native, HTML/CSS.</li>
+                                <li><strong>Backend:</strong> Java, Spring Boot, Python, Django, Node.js.</li>
+                                <li><strong>Blockchain:</strong> Solidity, Smart Contracts, Web3.</li>
+                                <li><strong>Bases de Datos:</strong> PostgreSQL, MySQL.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tech-image-container">
+                        <img src="img/diseño1.jpg" alt="Tecnologías que utilizo para el desarrollo de software"" class="tech-image">
+                    </div>
+                </div>
+                
+        </section>
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="proyectos-container">
+                <div class="proyecto">
+                    <h3>Finanzas360</h3>
+                    <h5>React Native</h5>
+                    <p>La aplicación para Android "Finanzas360", brinda una serie de herramientas e información que te van a permitir controlar tus finanzas y tomar decisiones con tus ahorros.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.robertocarriero.Finanzas&pcampaignid=web_share">Ver en Play Store</a>
+                    <a href="https://github.com/robertocarriero/Finanzas360">Código en GitHub</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Subasta en la Web 3</h3>
+                    <h5>Solidity</h5>
+                    <p> Smart Contract, verificado y publicado en la red de Scroll Sepolia que cumpla con lo siguiente:
+                        Funcion Constructor.
+                        Función para ofertar
+                        Mostrar ganador
+                        Mostrar ofertas
+                        Devolver depósitos
+                        Manejo de depósitos
+                        Eventos:
+                        Nueva Oferta: Se emite cuando se realiza una nueva oferta.
+                        Subasta Finalizada: Se emite cuando finaliza la subasta..</p>
+                        <p>Se puede interactuar con el Smart contract en Remix</p>
+                    <a href="https://sepolia.scrollscan.com/address/0x7c2ce90fb3dffccf087cf2d663b02ef1d3ba86e5#code">Ver Smart Contract en la red Scroll Sepolia</a>
+                </div>
+                <div class="proyecto">
+                    <h3>MovieTmdb</h3>
+                    <h5>React js.</h5>
+                    <p>MovieTmdb es una aplicación Web hecha para buscar películas, estrenos en línea, ver los trailers consumiendo la API TMDB.</p>
+                    <a href="https://movie-tmdb-pink.vercel.app/">Ver Proyecto</a>
+                    <a href="https://github.com/robertocarriero/MovieTmdb">Código en GitHub</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Exchange Descentralizado</h3>
+                    <h5>Solidity</h5>
+                    <p>Tres Smart Contract desplegados en la red de Scroll Sepolia (verificados y publicados) que implementa un exchange descentralizado simple que intercambia dos tokens ERC-20.</p>
+                    <p>Se puede interarcuar con ellos usando Remix</p>
+                    <a href="https://sepolia.scrollscan.com/address/0xb5412387281062be22f37e2ee3db5fb3617fa21e#code">Token A</a>
+                    <a href="https://sepolia.scrollscan.com/address/0x03b2b422abca01e89403214c6b4f33456495bb2c#code">Token B</a>
+                    <a href="https://sepolia.scrollscan.com/address/0x1815b036030e6f99a0815f17d310dec313389b9d#code">Contrato SimpleDEX</a>
+                    
+                </div>
+                <div class="proyecto">
+                    <h3>Cinema</h3>
+                    <h5>JavaScript</h5>
+                    <p>Cinema, es una aplicación web hecha con JavaScript, Html y Css para buscar películas en línea, Ver información de la misma, ver trailers. La aplicación cuenta con una gran selección de títulos.</p>
+                    <a href="https://robertocarriero.github.io/cinema/">Ver Proyecto</a>
+                    <a href="https://github.com/robertocarriero/cinema">Código en GitHub</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Foro HUB</h3>
+                    <h5>Java, Spring Boot 3</h5>
+                    <p>Este es un proyecto de Back End, es un foro desarrollado con Spring Boot 3, Java y MySql, que permite a los usuarios:
+                        Registrarse e iniciar sesión (con JWT).
+                        Crear, listar, actualizar y eliminar tópicos y respuestas.
+                        Manejar roles para ADMIN y USER, con diferentes niveles de permisos.</p>
+                    <a href="https://github.com/robertocarriero/Foro-Hub">Código en GitHub</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Encriptador ONE</h3>
+                    <h5>JavaScript</h5>
+                    <p>Este proyecto es una aplicación web, hecha con JavaScript, Html y Css, para encriptar y desencriptar texto utilizando reglas específicas de reemplazo de caracteres. Está diseñada para manejar texto en minúsculas, incluyendo puntuación y guiones, pero sin acentos..</p>
+                    <a href="https://robertocarriero.github.io/Encriptador-ONE/">Ver Proyecto</a>
+                    <a href="https://github.com/robertocarriero/Encriptador-ONE">Código en GitHub</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Calculadora</h3>
+                    <h5>JavaScript</h5>
+                    <p>Calculadora Básica hecha con JavaScript, Html y Css.</p>
+                    <a href="https://robertocarriero.github.io/calculadora/">Ver Proyecto</a>
+                    <a href="https://github.com/robertocarriero/calculadora">Código en GitHub</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Clima</h3>
+                    <h5>JavaScript</h5>
+                    <p>Indica el Clima en tu ciudad. Para que funcione hay que tener habilitada la ubicación. Hecha con JavaScript, Html y Css.</p>
+                    <a href="https://clima-neon-alpha.vercel.app/">Ver Proyecto</a>
+                    <a href="https://github.com/robertocarriero/Clima">Código en GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contactForm" action="https://formsubmit.co/roberto_carriero1@yahoo.com.ar" method="POST">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Email" required>
+                <textarea name="message" placeholder="Mensaje" required></textarea>
+            
+                <!-- Desactivar captcha y evitar redirección -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="#">
+            
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <!-- Modal de confirmación -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <p>✅ ¡Tu mensaje ha sido enviado con éxito!</p>
+                <button id="closeModal">Cerrar</button>
+            </div>
+        </div>
+
+            
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/robertocarriero?tab=repositories" target="_blank">
+            <img src="img/github.png" alt="GitHub" class="footer-icon">
+        </a>
+       <a href="https://www.linkedin.com/in/roberto-carriero/" target="_blank">
+            <img src="img/linkedin.png" alt="LinkedIn" class="footer-icon">
+        </a>
+        <a href="https://www.youtube.com/@robertocarriero5728" target="_blank">
+            <img src="img/youtube.png" alt="Youtube" class="footer-icon">
+        </a>
+        <a href="https://www.tiktok.com/@roberto_carriero" target="_blank">
+            <img src="img/Tick.jpg" alt="TikTok" class="footer-icon">
+        </a>
+        <a href="https://www.instagram.com/roberto_carriero1/" target="_blank">
+            <img src="img/instagram.png" alt="Instagram" class="footer-icon">
+        </a>
+    </footer>
+    <button id="backToTop" class="back-to-top">⬆ Inicio</button>
+
+</body>
+</html>
