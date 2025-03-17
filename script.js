@@ -30,7 +30,7 @@
                 loader.style.display = "none";
                 body.classList.remove("loading"); // Mostrar la página después del loader
             }, 1000); // Pequeño retraso para suavizar la transición
-        }, 6000); // Mantener el loader visible un poco más antes de desvanecerlo
+        }, 2000); // Mantener el loader visible un poco más antes de desvanecerlo
     });
     // Toggle modo oscuro/claro
     const toggleMode = document.getElementById("toggleMode");

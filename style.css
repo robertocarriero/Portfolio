@@ -46,12 +46,19 @@ body.light-mode {
 }
 
 .subtitulo {
+    display: flex;
+    justify-self: center;
     max-width: 80%;
     font-size: 1em;
     opacity: 0.9;
     margin-top: 7px;
     font-style: italic;
     color: aqua;
+    text-align: center;
+}
+
+body.light-mode .subtitulo{
+    color: #000;
 }
 
 #loader.hidden {
